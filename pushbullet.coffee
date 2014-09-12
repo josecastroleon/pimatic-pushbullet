@@ -87,13 +87,6 @@ module.exports = (env) ->
           # just return a promise fulfilled with a description about what we would do.
           return __("would push message \"%s\" with title \"%s\"", message, title)
         else
-          msg = {
-            message: message
-            title: title
-            sound: @sound
-            priority: @priority
-          }
-
           return pusherService.noteAsync(@device, title, message).then( =>
             __("pushbullet message sent successfully") 
           )

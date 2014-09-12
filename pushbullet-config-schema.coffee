@@ -6,8 +6,8 @@ module.exports = {
       description:"Pushbullet api key"
       type: "string"
       required: yes
-    device: #might be overwritten by predicate, not implemented yet
+    device:
       description:"device to send the notifcation to"
-      type: "string"
-      default: ""
+      type: "number"
+      default: 0
 }

@@ -63,7 +63,6 @@ module.exports = (env) ->
 
         assert Array.isArray(titleTokens)
         assert Array.isArray(messageTokens)
-        assert(not isNaN(priority))
 
         return {
           token: match

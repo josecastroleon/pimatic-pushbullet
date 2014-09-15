@@ -8,9 +8,8 @@
     "README.md",
     "pushbullet-config-schema.coffee"
   ],
-  "version": "0.8.0",
-  "homepage": "http://your-plugin-website",
-  "private": true,
+  "version": "0.8.1",
+  "homepage": "https://github.com/josecastroleon/pimatic-pushbullet",
   "configSchema": "pushbullet-config-schema.coffee",
   "dependencies": {
     "pushbullet": "1.3.0"
@@ -21,5 +20,15 @@
   "engines": {
     "node": ">0.8.x",
     "npm": ">1.1.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josecastroleon/pimatic-pushbullet.git"
+  },
+  "keywords": [
+    "pimatic"
+  ],
+  "bugs": {
+    "url": "https://github.com/josecastroleon/pimatic-pushbullet/issues"
   }
 }

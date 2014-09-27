@@ -8,7 +8,7 @@
     "README.md",
     "pushbullet-config-schema.coffee"
   ],
-  "version": "0.8.1",
+  "version": "0.8.2",
   "homepage": "https://github.com/josecastroleon/pimatic-pushbullet",
   "configSchema": "pushbullet-config-schema.coffee",
   "dependencies": {

@@ -22,4 +22,8 @@ module.exports = {
       description:"Default type of notification"
       type: "string"
       default: "note"
+    channeltag:
+      description:"channeltag to send the notification to"
+      type: "string"
+      default: ""
 }

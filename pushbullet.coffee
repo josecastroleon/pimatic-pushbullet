@@ -36,6 +36,8 @@ module.exports = (env) ->
       defaultMessage = @config.message
       defaultDevice = @config.device
       defaultType = @config.type
+        
+      if @config.channeltag != "" then defaultDevice = {channel_tag: @config.channeltag}
 
       # Helper to convert 'some text' to [ '"some text"' ]
       strToTokens = (str) => ["\"#{str}\""]

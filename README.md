@@ -12,7 +12,7 @@ You can load the backend by editing your `config.json` to include:
       "apikey": "xxxxxxxxxxxxxxxxxxxxxxxxxx"
     }
 
-in the `plugins` section. For all configuration options see 
+in the `plugins` section. You can indicate which Device or Channel should be pushed to. For all configuration options see 
 [pushbullet-config-schema](pushbullet-config-schema.coffee)
 
 Currently you can send pushbullet notifications via action handler within rules.

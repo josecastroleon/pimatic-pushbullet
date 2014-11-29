@@ -8,8 +8,8 @@ module.exports = {
       required: yes
     device:
       description:"device to send the notification to"
-      type: "number"
-      default: 0
+      type: "string"
+      default: ""
     title:
       description:"Default title for notification"
       type: "string"
@@ -22,4 +22,8 @@ module.exports = {
       description:"Default type of notification"
       type: "string"
       default: "note"
+    channeltag:
+      description:"channeltag to send the notification to"
+      type: "string"
+      default: ""
 }

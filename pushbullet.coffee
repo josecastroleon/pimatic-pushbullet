@@ -41,6 +41,8 @@ module.exports = (env) ->
 
       # Helper to convert 'some text' to [ '"some text"' ]
       strToTokens = (str) => ["\"#{str}\""]
+      # Helper to convert [ '"some text"' ] to 'some text'
+      tokensToStr = (tokens) => tokens[0].replace(/\'|\"/g, "")
 
       titleTokens = strToTokens defaultTitle
       messageTokens = strToTokens defaultMessage
@@ -50,6 +52,7 @@ module.exports = (env) ->
       setTitle = (m, tokens) => titleTokens = tokens
       setMessage = (m, tokens) => messageTokens = tokens
       setType = (m, tokens) => typeTokens = tokens
+      setChannel = (m, tokens) => device = {channel_tag: tokensToStr tokens}
 
       m = M(input, context)
         .match('send ', optional: yes)
@@ -62,6 +65,9 @@ module.exports = (env) ->
       if next.hadMatch() then m = next
 
       next = m.match(' type:').matchStringWithVars(setType)
+      if next.hadMatch() then m = next
+
+      next = m.match(' channel:').matchStringWithVars(setChannel)
       if next.hadMatch() then m = next
 
       if m.hadMatch()

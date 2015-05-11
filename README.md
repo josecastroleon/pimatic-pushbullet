@@ -27,6 +27,10 @@ if you want to send a file you need to specify 'file' as type and in the message
 
     if it is 10:00 push title:"Good morning!" message:"/home/pi/photo.jpg" type:"file"
 
+if you want to send a file or note to a specific channel you can add channel to your rule:
+
+    if it is 8:00 push title:"Good morning!" message:"Good morning to all of you" channel:"my_flatmates"
+
 in general:
 
     if X then push title: "title of the push notification" message: "message for the notification" type: "note|file"

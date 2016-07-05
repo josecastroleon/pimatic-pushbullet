@@ -3,10 +3,12 @@
   "description": "Plugin to send Pushbullet notifications in pimatic",
   "author": "Jose Castro Leon <josecastroleon@gmail.com>",
   "main": "pushbullet",
+  "license": "GPL-2.0",
   "files": [
     "pushbullet.coffee",
     "README.md",
-    "pushbullet-config-schema.coffee"
+    "pushbullet-config-schema.coffee",
+    "LICENSE"
   ],
   "version": "0.8.4",
   "homepage": "https://github.com/josecastroleon/pimatic-pushbullet",

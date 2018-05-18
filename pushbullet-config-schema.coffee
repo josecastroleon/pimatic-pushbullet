@@ -7,23 +7,23 @@ module.exports = {
       type: "string"
       required: yes
     device:
-      description:"device to send the notification to"
+      description:"Device nickname to send the notification to. Note, a channeltag will take precedence over device"
       type: "string"
       default: ""
     title:
       description:"Default title for notification"
       type: "string"
-      default: "title"
+      default: "message title"
     message:
-      description:"Default message or file for notification"
+      description:"Default message, link URL or file path for notification"
       type: "string"
-      default: "message"
+      default: "message text"
     type:
       description:"Default type of notification"
-      type: "string"
+      enum: ["note", "link", "file"]
       default: "note"
     channeltag:
-      description:"channeltag to send the notification to"
+      description:"Channel tag to send the notification to"
       type: "string"
       default: ""
 }
